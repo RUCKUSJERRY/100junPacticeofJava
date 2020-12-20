@@ -1,10 +1,8 @@
 package com.test01;
 
 import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
 import java.util.StringTokenizer;
 
 public class Main {
@@ -12,25 +10,20 @@ public class Main {
 	public static void main(String[] args) throws IOException {
 
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+		StringTokenizer st = new StringTokenizer(br.readLine());
+		
+		int n = Integer.parseInt(st.nextToken());
+		int m = Integer.parseInt(st.nextToken());
+		st = new StringTokenizer(br.readLine());
 
-		int n = Integer.parseInt(br.readLine().trim());
-		
-		//StringTokenizer st = new StringTokenizer(br.readLine());
-		
-		
 		for (int i = 0; i < n; i++) {
-			 String text = br.readLine();
-	            String[] word = text.split(" ");
-	            int a = Integer.parseInt(word[0]);
-	            int b = Integer.parseInt(word[1]);
-	            bw.write((a+b) + "\n");
-			
+			int tmp = Integer.parseInt(st.nextToken());
+
+			if (tmp < m) {
+				System.out.print(tmp + " ");
+			}
 		}
-		
-		bw.flush();
-		bw.close();
-		
+		br.close();
 	}
 
 }
