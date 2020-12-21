@@ -1,0 +1,65 @@
+package com.array01;
+
+import java.util.Scanner;
+
+public class Main2577 {
+	static Scanner sc = new Scanner(System.in);
+
+	public static void main(String[] args) {
+
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		int c = sc.nextInt();
+
+		int res = a * b * c;
+		String arr = Integer.toString(res);
+		int zero = 0;
+		int one = 0;
+		int two = 0;
+		int three = 0;
+		int four = 0;
+		int five = 0;
+		int six = 0;
+		int seven = 0;
+		int eight = 0;
+		int nine = 0;
+		for (int i = 0; i < arr.length(); i++) {
+			switch (arr.charAt(i)) {
+			case '0':
+				zero++;
+				break;
+			case '1':
+				one++;
+				break;
+			case '2':
+				two++;
+				break;
+			case '3':
+				three++;
+				break;
+			case '4':
+				four++;
+				break;
+			case '5':
+				five++;
+				break;
+			case '6':
+				six++;
+				break;
+			case '7':
+				seven++;
+				break;
+			case '8':
+				eight++;
+				break;
+			case '9':
+				nine++;
+				break;
+			}
+		}
+		System.out.printf("%d\n%d\n%d\n%d\n%d\n%d\n%d\n%d\n%d\n%d\n", zero, one, two, three, four, five, six, seven,
+				eight, nine);
+		sc.close();
+	}
+
+}

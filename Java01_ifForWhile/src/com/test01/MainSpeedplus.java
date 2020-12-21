@@ -21,7 +21,6 @@ public class MainSpeedplus {
 			StringTokenizer st = new StringTokenizer(br.readLine());
 			
 			int a = Integer.parseInt(st.nextToken());
-			
 			int c = Integer.parseInt(st.nextToken());
 			
 			int res = a + c;

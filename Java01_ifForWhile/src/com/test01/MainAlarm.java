@@ -3,9 +3,9 @@ package com.test01;
 import java.util.Scanner;
 
 public class MainAlarm {
-
+	static Scanner sc = new Scanner(System.in);
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
+		
 
 		int h = sc.nextInt();
 		int m = sc.nextInt();
