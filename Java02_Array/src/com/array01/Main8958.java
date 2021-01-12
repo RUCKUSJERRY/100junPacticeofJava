@@ -14,7 +14,7 @@ public class Main8958 {
 
 		String[] arr = new String[n];
 		int [] res = new int [n];
-
+		
 		for (int i = 0; i < arr.length; i++) {
 			StringTokenizer st = new StringTokenizer(br.readLine());
 			arr[i] = st.nextToken();
