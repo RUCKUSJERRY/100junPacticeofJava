@@ -11,8 +11,12 @@ public class entNumber {
 		System.out.println("몇줄을 출력하시겠습니까?");
 		int n = sc.nextInt();
 		
-		String line = "1"; // 시작...
-		String next = ""; // 다음라인?....
+		String line = "1";
+		String next = "";
+		
+		// nextLine 메소드 -> 다음라인의 값을 String으로 출력해주는거
+		// numberCnt -> 1이 몇개인지 2가 몇개인지 3이 몇개인지 그때그때 스트링으로 출력해서 nextLine 메소드로 보내주는 메소드
+		
 		
 		for (int i = 0; i < n; i++) {
 			System.out.println(line);
@@ -24,6 +28,7 @@ public class entNumber {
 	}
 	// 다음 라인을 출력하는 메소드
 	public static String nextLine(String line) {
+	
 		String next = ""; 
 		for (int i = 0; i < line.length(); i++) {
 			if (i > 0) {
@@ -53,34 +58,5 @@ public class entNumber {
 		
 		return str + Integer.toString(count);
 	}
-	
-	/*
-	 * 메인메소드
-	 * 스캐너
-	 * 몇줄인지 받어
-	 * int n = sc.nextInt();
-	 * 
-	 * String line = "12";
-	 * String next = "12";
-	 * 
-	 * for (int i = 0; i < n; i++){
-	 * 		next = nextline(line);
-	 * 		line = next;
-	 *	}
-	 *
-	 */
-	 
-	
-	// 
-	
-	// 1이 1개  "11" -> 리턴 메소드 String nextLine(String line) { 
-	
-	//	return }
-	
-	// 숫자를 세주는 메소드,,?
-	
-	// 
-	
-	
 	
 }
