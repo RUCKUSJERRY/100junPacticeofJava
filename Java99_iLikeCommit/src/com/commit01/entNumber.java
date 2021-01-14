@@ -13,10 +13,11 @@ public class entNumber {
 		
 		String line = "1";
 		String next = "";
+
 		
 		// nextLine 메소드 -> 다음라인의 값을 String으로 출력해주는거
 		// numberCnt -> 1이 몇개인지 2가 몇개인지 3이 몇개인지 그때그때 스트링으로 출력해서 nextLine 메소드로 보내주는 메소드
-		
+
 		
 		for (int i = 0; i < n; i++) {
 			System.out.println(line);
@@ -24,6 +25,7 @@ public class entNumber {
 			line = next;
 			
 		}
+		
 		
 	}
 	// 다음 라인을 출력하는 메소드
@@ -58,5 +60,6 @@ public class entNumber {
 		
 		return str + Integer.toString(count);
 	}
+	
 	
 }

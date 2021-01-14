@@ -1,42 +1,43 @@
 package com.fx01;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main4673 {
 
-	public static void main(String[] args) {
+	public static int cal(int i) {
 		
-		int [] conArr = new int [10000];
-		int a = 1;
-		int con = 0;
-
-		for (int i = 0; i < conArr.length; i++) {
+		String a = Integer.toString(i);
+		int temp = 0;
+		int res = 0;
+		for (int j = 0; j < a.length(); j++) {
 			
-			for (int j = 0; j < Integer.toString(a).length(); j++) {			
-				con += Integer.toString(a).charAt(j);
-				System.out.println(con);
+			temp = Character.getNumericValue(a.charAt(j));
+			res += temp;
+					
+		}
+		
+		res += i;
+		return res;
+	}
+	
+	public static void main(String[] args) {	
+		
+		List<Integer> list = new ArrayList<Integer>();
+
+		for (int i = 1; i < 10000; i++) {
+
+			list.add(cal(i));
+		}
+
+		for (int i = 0; i < 10000; i++) {
+			
+			if (list.contains(i+1) == false) {
+				System.out.println(i+1);
 			}
-			con = con + a;
-			conArr[i] = con;
-			a++;
-			con = 0;
 			
 		}
-		System.out.println(conArr[0]);
-		
-		// 생성자를 통해 결과값 숫자를 출력해서 배열에 집어넣기?
-
-		// 1 ~ 10000 사이 중에 결과값에 안나온 숫자들을 순서대로 출력
-
-		// d(x) = x + x1 + x2
 
 	}
-
-	// 생성자 값 도출
-	public static void con() {
-			
-			
-			
-		}
-		
-	
 
 }
