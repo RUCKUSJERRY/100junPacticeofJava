@@ -10,15 +10,14 @@ public class Main10809 {
 		String a = sc.next();
 		a.toLowerCase();
 		
-		int count = 0;
-		
-		for (int i = 0; i < a.length(); i++) {
+		for (int i = 97; i < 123; i++) {
 			
-			
-			
-			
+			char b = 0;
+				 b += i;
+
+			System.out.print(a.indexOf(b) + " ");
+			b = 0;
 		}
-		
 		
 	}
 	
