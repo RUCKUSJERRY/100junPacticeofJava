@@ -67,9 +67,7 @@ public class Main1316 {
 						for (int j2 = set; j2 < s.length(); j2++) {
 							if (s.charAt(j2) == now) {
 								return false;
-							} else {
-								
-							}
+							} 
 						}
 						
 					}
