@@ -14,8 +14,15 @@ public class Main1193 {
 		int y = 0;
 		
 		do {
-			n = n - cnt;
-			cnt++;
+			
+			if (n == 1) {
+				break;
+			} else {
+				n = n - cnt;
+				cnt++;
+			}
+			
+			
 			
 			
 		} while (n > cnt);
@@ -27,14 +34,21 @@ public class Main1193 {
 		y = cnt; // ¼¼·Î
 		
 		if (x % 2 == 1) {
+			y = 1;			
+			for (int i = 1; i < n; i++) {
+				x--;
+				y++;
+			}
 			
-		} else {
-			
-		}
-		for (int i = 0; i < args.length; i++) {
-			
+		} else if (x % 2 == 0){
+			x = 1;			
+			for (int i = 1; i < n; i++) {
+				y--;
+				x++;
+			}			
 		}
 		
+		System.out.println(x + "/" + y);
 		
 	}
 	
