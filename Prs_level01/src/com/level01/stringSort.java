@@ -28,15 +28,12 @@ public class stringSort {
 			temp[i] = strings[i].charAt(n) + strings[i];
 		}
 		
-		System.out.println(Arrays.toString(temp));
 		Arrays.sort(temp);
-		System.out.println(Arrays.toString(temp));
 		
 		for (int i = 0; i < temp.length; i++) {
 			answer[i] = temp[i].substring(1);
 		}
 		
-//		Arrays.sort(answer);
 		System.out.println(Arrays.toString(answer));
 		return answer;
 	}
