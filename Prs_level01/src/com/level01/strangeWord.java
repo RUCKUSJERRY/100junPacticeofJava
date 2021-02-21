@@ -1,8 +1,5 @@
 package com.level01;
 
-import java.util.Iterator;
-import java.util.StringTokenizer;
-
 public class strangeWord {
 
 	public static void main(String[] args) {
@@ -30,10 +27,7 @@ public class strangeWord {
             			count++;
             		} 	
         		}
-        		
-        		
-        		
-        		
+
 			}
         	
         System.out.println(answer);
