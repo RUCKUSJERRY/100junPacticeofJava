@@ -19,7 +19,7 @@ public class getAverage {
 		}
         
         
-        answer = sum / arr.length;
+        answer = sum / (double) arr.length;
         System.out.println(answer);
         return answer;
     }
