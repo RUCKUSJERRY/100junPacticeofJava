@@ -28,6 +28,7 @@ public class mathGiveUp {
 		int cnt3 = 0;
 
 		for (int i = 0; i < answers.length; i++) {
+		// 수포자 1의 답안 패턴을 정답 패턴과 비교해서 맞을때마다 cnt1++;
 			if (math1[num1] == answers[i]) {
 				cnt1++;
 				System.out.println(math1[num1] + " : " + answers[i]);
@@ -43,6 +44,7 @@ public class mathGiveUp {
 		System.out.println("수포자 1의 점수 : " + cnt1);
 
 		for (int i = 0; i < answers.length; i++) {
+		// 수포자 2의 답안 패턴을 정답 패턴과 비교해서 맞을때마다 cnt2++;
 
 			if (math2[num2] == answers[i]) {
 				cnt2++;
@@ -57,6 +59,7 @@ public class mathGiveUp {
 		System.out.println("수포자 2의 점수 : " + cnt2);
 
 		for (int i = 0; i < answers.length; i++) {
+		// 수포자 3의 답안 패턴을 정답 패턴과 비교해서 맞을때마다 cnt3++;
 
 			if (math3[num3] == answers[i]) {
 				cnt3++;
@@ -72,7 +75,8 @@ public class mathGiveUp {
 
 		int length = 0;
 		int[] answer = {};
-		
+		// 이 부분이 노가다인데...아직 많이 모자란가 보다.
+		// 각각의 숫자들을 비교해 가장 많이 맞은 사람이 수 만큼 배열의 길이를 초기화해서 해당 값을 넣어서 리턴한다.
 		if (cnt1 > cnt2 && cnt1 > cnt3) {
 			length = 1;
 			answer = new int[length];
