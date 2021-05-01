@@ -1,7 +1,7 @@
 function test() {
 
-	var lottos = [45, 4, 35, 20, 3, 9];
-	var win_nums = [45, 4, 35, 20, 3, 9];
+	var lottos = [44, 1, 0, 0, 31, 25];
+	var win_nums = [31, 10, 45, 1, 6, 19];
 
 	
 
@@ -21,14 +21,6 @@ function test() {
 
 function solution(lottos, win_nums) {
 	
-	lottos.sort(function(a, b) {
-		return a - b;
-	  });
-
-	  
-	win_nums.sort(function(a, b) {
-		return a - b;
-	  });
 
 	var max = 0;
 	// 최고 순위
