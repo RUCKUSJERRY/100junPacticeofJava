@@ -1,18 +1,3 @@
-class Queue {
-    constructor() {
-    // 생성자
-        this._arr = [];
-    }
-    enqueue(item) {
-    // 큐에 집어 넣는 메소드
-        this._arr.push(item);
-    }
-    dequeue() {
-    // 큐에서 나가는 메소드
-        return this.arr_.shift();
-    }
-}
-
 function test() {
 
 	var _bridge_length = 2;
