@@ -2,7 +2,7 @@ function test() {
 
 	var _bridge_length = 2;
 	var _weight = 10;
-    var _truck_weights = [7,4,5,6];
+    var _truck_weights = [7,4,5,6,0];
 
 	solution(_bridge_length, _weight, _truck_weights);
 }
