@@ -7,7 +7,7 @@ public class createPrimeNum {
 	// 다른 수로는 안나누어 떨어지는거
 	
 	public static void main(String[] args) {
-		int[] nums = {1, 2, 6, 7, 4};
+		int[] nums = {1,2,3,4,5,6,7};
 		
 		solution(nums);
 	}
