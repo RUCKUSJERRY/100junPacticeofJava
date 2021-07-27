@@ -1,5 +1,7 @@
 package com.naver;
 
+import java.util.Arrays;
+
 public class nw03 {
 
 	public static void main(String[] args) {
@@ -9,18 +11,45 @@ public class nw03 {
 		solution(s, t);
 		
 	}
-	
-    public static int solution(String s, String t) {
-        int result = 0;
+	public static int solution(String s, String t) {
+		int result = -1;
 
-        while(chkString(s, t)) {
-        	
-        	s = s.replace(t, "");
-        	result++;
+        String [] sArr = s.split("");
+        String [] tArr = t.split("");
+
+        int [] cnt = new int [tArr.length];
+
+        for(int i = 0; i < sArr.length; i++) {
+            for(int j = 0; j < tArr.length; j++) {
+                if(sArr[i].equals(tArr[j])) {
+                	System.out.println(sArr[i] + " : " + tArr[j]);
+                    cnt[j]++;
+                }
+            }
         }
 
+        Arrays.sort(cnt);
+
+        result = cnt[0];
+        System.out.println(Arrays.toString(sArr));
+        System.out.println(Arrays.toString(tArr));
+        System.out.println(Arrays.toString(cnt));
+        System.out.println(result);
         return result;
-    }
+	}
+	
+	
+//    public static int solution(String s, String t) {
+//        int result = 0;
+//
+//        while(chkString(s, t)) {
+//        	
+//        	s = s.replace(t, "");
+//        	result++;
+//        }
+//
+//        return result;
+//    }
 
     private static boolean chkString(String s, String t) {
     	
